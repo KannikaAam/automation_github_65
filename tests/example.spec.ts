@@ -17,6 +17,10 @@ test('get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
 
+test('facebook', async ({ page }) => {
+  await page.goto('https://www.facebook.com');
+});
+
 test('ig', async ({ page }) => {
   await page.goto('https//www.ig.com');
 });
